@@ -10,6 +10,7 @@ logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 project_name = 'kidney disease classification'
 
 list_of_files = [
+    ".gitignore"
     ".github/workflow/.gitkeep", #https://www.freecodecamp.org/news/what-is-gitkeep/         
                                  #even though the dir /.../workflow is empty, it can still be tracked by git.
     f"src/{project_name}/__init__.py",

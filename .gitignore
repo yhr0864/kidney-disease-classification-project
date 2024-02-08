@@ -1,0 +1,10 @@
+# ignore ALL .log files
+*.log
+
+# dataset
+artifacts/*
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
