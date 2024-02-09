@@ -1,5 +1,6 @@
 torch>=1.8.0
 torchvision>=0.9.0
+transformers>=4.36.0
 pandas
 dvc
 mlflow==2.2.2
