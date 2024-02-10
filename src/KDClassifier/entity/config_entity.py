@@ -14,7 +14,15 @@ class DataIngestionConfig:
 class PrepareBaseModelConfig:
     root_dir: Path
     base_model_path: Path
+    params_num_classes: int
+
+
+@dataclass(frozen=True)
+class TrainingModelConfig:
+    root_dir: Path
+    prepare_base_model: Path
+    trained_model_path: Path
+    training_data: Path
     params_batch_size: int
     params_epochs: int
-    params_num_classes: int
     params_learning_rate: float

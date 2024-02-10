@@ -1,25 +1,28 @@
 from src.KDClassifier.config.configuration import ConfigurationManager
-from src.KDClassifier.components.prepare_base_model import PrepareBaseModel 
+from src.KDClassifier.components.training import Training
 from src.KDClassifier import logger
 
 
-STAGE_NAME = "Model Prepare"
+STAGE_NAME = "Model Training"
 
-class ModelPreparePipeline:
+class ModelTrainingPipeline:
     def __init__(self) -> None:
         pass
 
     def main(self):
         config = ConfigurationManager()
-        PrepareBaseModelConfig = config.get_base_model_config()
-        prepare_base_model = PrepareBaseModel(config=PrepareBaseModelConfig)
-        prepare_base_model.get_base_model()
+        training_config = config.get_training_config()
+        training = Training(training_config)
+        training.get_training_model()
+        training.train_valid_generator()
+        logger.info("start training")
+        training.train()
 
 
 if __name__ == "__main__":
     try:
         logger.info(f"###### stage {STAGE_NAME} started ######")
-        obj = ModelPreparePipeline()
+        obj = ModelTrainingPipeline()
         obj.main()
         logger.info(f"###### stage {STAGE_NAME} finished ######")
     except Exception as e:
