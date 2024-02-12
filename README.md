@@ -58,5 +58,15 @@ export MLFLOW_TRACKING_URI=https://dagshub.com/yhr0864/kidney-disease-classifica
 
 export MLFLOW_TRACKING_USERNAME=yhr0864
 
-export MLFLOW_TRACKING_PASSWORD=d9d7c85432b94cdcba7ac783932b5090561e756d
+export MLFLOW_TRACKING_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
+
+Or add these codes into your project
+```bash
+os.environ["MLFLOW_TRACKING_URI"]="https://dagshub.com/yhr0864/kidney-disease-classification-project.mlflow"
+
+os.environ["MLFLOW_TRACKING_USERNAME"]="yhr0864"
+
+os.environ["MLFLOW_TRACKING_PASSWORD"]="XXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+```
+
