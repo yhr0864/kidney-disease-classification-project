@@ -889,3 +889,294 @@ TypeError: __init__() got an unexpected keyword argument 'params_batch_size'
 [2024-02-10 21:56:28,468: INFO: common: created directory at: artifacts/model_training]
 [2024-02-10 21:56:28,726: INFO: stage_03_training: start training]
 [2024-02-10 21:56:28,739: INFO: training: training on cpu]
+[2024-02-11 09:33:44,506: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-11 09:33:44,517: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-11 09:33:44,517: INFO: common: created directory at: artifacts]
+[2024-02-11 09:33:44,518: INFO: common: created directory at: artifacts/model_training]
+[2024-02-11 09:33:45,161: INFO: 4274925046: start training]
+[2024-02-11 09:33:45,437: INFO: 1647631401: training on cuda]
+[2024-02-11 09:37:25,950: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-11 09:37:25,952: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-11 09:37:25,954: INFO: common: created directory at: artifacts]
+[2024-02-11 09:37:25,955: INFO: common: created directory at: artifacts/model_training]
+[2024-02-11 09:37:26,327: INFO: 4274925046: start training]
+[2024-02-11 09:37:26,695: INFO: 3029808245: training on cuda]
+[2024-02-11 09:37:59,370: INFO: 3029808245: calculate epoch loss]
+[2024-02-11 09:37:59,370: INFO: 3029808245: Epoch 1, Loss: 0.7018894868738511, Accuracy: 0.5049627791563276]
+[2024-02-11 09:38:23,830: INFO: 3029808245: calculate epoch loss]
+[2024-02-11 09:38:23,830: INFO: 3029808245: Epoch 2, Loss: 0.6860780634132086, Accuracy: 0.5856079404466501]
+[2024-02-11 09:41:53,748: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-11 09:41:53,749: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-11 09:41:53,751: INFO: common: created directory at: artifacts]
+[2024-02-11 09:41:53,752: INFO: common: created directory at: artifacts/model_training]
+[2024-02-11 09:41:54,128: INFO: 4274925046: start training]
+[2024-02-11 09:41:54,491: INFO: 4105452306: training on cuda]
+[2024-02-11 09:42:28,319: INFO: 4105452306: Epoch 1, Loss: 0.6967722329438901, Accuracy: 0.5707196029776674]
+[2024-02-11 09:42:52,812: INFO: 4105452306: Epoch 2, Loss: 0.6440317779779434, Accuracy: 0.6129032258064516]
+[2024-02-11 09:42:53,204: INFO: 4105452306: model saved for epoch 1]
+[2024-02-11 09:44:24,467: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-11 09:44:24,477: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-11 09:44:24,478: INFO: common: created directory at: artifacts]
+[2024-02-11 09:44:24,479: INFO: common: created directory at: artifacts/model_training]
+[2024-02-11 09:44:24,858: INFO: 4274925046: start training]
+[2024-02-11 09:44:25,022: INFO: 4105452306: training on cuda]
+[2024-02-11 09:44:54,232: INFO: 4105452306: Epoch 1, Loss: 0.6967558952478262, Accuracy: 0.575682382133995]
+[2024-02-11 09:45:18,285: INFO: 4105452306: Epoch 2, Loss: 0.6839319513394282, Accuracy: 0.5508684863523573]
+[2024-02-11 09:45:18,685: INFO: 4105452306: model saved for epoch 1]
+[2024-02-12 10:22:01,443: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-12 10:22:01,449: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 10:22:01,450: INFO: common: created directory at: artifacts]
+[2024-02-12 10:22:01,451: INFO: common: created directory at: artifacts/model_training]
+[2024-02-12 10:22:02,057: INFO: 4274925046: start training]
+[2024-02-12 10:22:02,257: INFO: 4020556190: training on cuda]
+[2024-02-12 10:22:36,657: INFO: 4020556190: Epoch 1, Loss: 0.6866437105032114, Accuracy: 0.5421836228287841]
+[2024-02-12 10:23:00,740: INFO: 4020556190: Epoch 2, Loss: 0.5527243373485712, Accuracy: 0.7468982630272953]
+[2024-02-12 10:23:00,740: INFO: 4020556190: model evaluation]
+[2024-02-12 10:23:04,510: INFO: 4020556190: Accuracy: 0.8712871287128713
+Precision: 0.8897807965421427
+Recall: 0.8712871287128713
+F1 Score: 0.8697420634920634]
+[2024-02-12 10:23:04,903: INFO: 4020556190: model saved for epoch 1]
+[2024-02-12 10:23:29,223: INFO: 4020556190: Epoch 3, Loss: 0.31838679113067114, Accuracy: 0.8622828784119106]
+[2024-02-12 10:23:53,518: INFO: 4020556190: Epoch 4, Loss: 0.3225892497083315, Accuracy: 0.9069478908188585]
+[2024-02-12 10:23:53,522: INFO: 4020556190: model evaluation]
+[2024-02-12 10:23:57,050: INFO: 4020556190: Accuracy: 0.698019801980198
+Precision: 0.8117283950617284
+Recall: 0.698019801980198
+F1 Score: 0.667718361513362]
+[2024-02-12 10:23:57,428: INFO: 4020556190: model saved for epoch 3]
+[2024-02-12 15:53:22,590: INFO: utils: Note: NumExpr detected 20 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-12 15:53:22,590: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-12 15:57:55,332: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-12 15:57:55,334: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 15:57:55,335: INFO: common: created directory at: artifacts]
+[2024-02-12 15:59:48,278: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-12 15:59:48,279: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 15:59:48,280: INFO: common: created directory at: artifacts]
+[2024-02-12 16:02:06,357: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-12 16:02:06,358: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 16:02:06,360: INFO: common: created directory at: artifacts]
+[2024-02-12 16:02:13,595: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-12 16:02:13,596: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 16:02:13,597: INFO: common: created directory at: artifacts]
+[2024-02-12 16:02:25,120: INFO: 2221389218: Accuracy: 0.655
+Precision: 0.7958579881656804
+Recall: 0.655
+F1 Score: 0.6083884332699566]
+[2024-02-12 16:02:25,120: INFO: 2221389218:               precision    recall  f1-score   support
+
+      Normal       1.00      0.31      0.47       100
+       Tumor       0.59      1.00      0.74       100
+
+    accuracy                           0.66       200
+   macro avg       0.80      0.66      0.61       200
+weighted avg       0.80      0.66      0.61       200
+]
+[2024-02-12 16:02:25,129: INFO: 2221389218: conf_matrix:
+ [[ 31  69]
+ [  0 100]]]
+[2024-02-12 16:05:06,613: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-12 16:05:06,615: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 16:05:06,616: INFO: common: created directory at: artifacts]
+[2024-02-12 16:05:19,769: INFO: 2221389218: Accuracy: 0.655
+Precision: 0.7958579881656804
+Recall: 0.655
+F1 Score: 0.6083884332699566]
+[2024-02-12 16:05:19,769: INFO: 2221389218:               precision    recall  f1-score   support
+
+      Normal       1.00      0.31      0.47       100
+       Tumor       0.59      1.00      0.74       100
+
+    accuracy                           0.66       200
+   macro avg       0.80      0.66      0.61       200
+weighted avg       0.80      0.66      0.61       200
+]
+[2024-02-12 16:05:19,769: INFO: 2221389218: conf_matrix:
+ [[ 31  69]
+ [  0 100]]]
+[2024-02-12 20:57:18,825: INFO: utils: Note: NumExpr detected 20 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-12 20:57:18,825: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-12 20:57:19,092: INFO: main: ###### stage Data Ingestion started ######]
+[2024-02-12 20:57:19,092: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-12 20:57:19,092: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 20:57:19,092: INFO: common: created directory at: artifacts]
+[2024-02-12 20:57:19,092: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-12 20:57:19,092: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1Wn8dfHJxsKgscvPS5jRk16ko9UlyEYRl/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-12 20:57:19,436: ERROR: main: Failed to retrieve file url:
+
+	Too many users have viewed or downloaded this file recently. Please
+	try accessing the file again later. If the file you are trying to
+	access is particularly large or is shared with many people, it may
+	take up to 24 hours to be able to view or download the file. If you
+	still can't access a file after 24 hours, contact your domain
+	administrator.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=1Wn8dfHJxsKgscvPS5jRk16ko9UlyEYRl
+
+but Gdown can't. Please check connections and permissions.]
+Traceback (most recent call last):
+  File "D:\anaconda3\Lib\site-packages\gdown\download.py", line 253, in download
+    url = get_url_from_gdrive_confirmation(res.text)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda3\Lib\site-packages\gdown\download.py", line 52, in get_url_from_gdrive_confirmation
+    raise FileURLRetrievalError(error)
+gdown.exceptions.FileURLRetrievalError: Too many users have viewed or downloaded this file recently. Please try accessing the file again later. If the file you are trying to access is particularly large or is shared with many people, it may take up to 24 hours to be able to view or download the file. If you still can't access a file after 24 hours, contact your domain administrator.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\15600\Desktop\PY\kidney-disease-classification-project\main.py", line 12, in <module>
+    obj.main()
+  File "C:\Users\15600\Desktop\PY\kidney-disease-classification-project\src\KDClassifier\pipeline\stage_01_data_ingestion.py", line 16, in main
+    data_ingestion.download_file()
+  File "C:\Users\15600\Desktop\PY\kidney-disease-classification-project\src\KDClassifier\components\data_ingestion.py", line 28, in download_file
+    raise e
+  File "C:\Users\15600\Desktop\PY\kidney-disease-classification-project\src\KDClassifier\components\data_ingestion.py", line 25, in download_file
+    gdown.download(prefix+file_id, zip_download_dir)
+  File "D:\anaconda3\Lib\site-packages\gdown\download.py", line 264, in download
+    raise FileURLRetrievalError(message)
+gdown.exceptions.FileURLRetrievalError: Failed to retrieve file url:
+
+	Too many users have viewed or downloaded this file recently. Please
+	try accessing the file again later. If the file you are trying to
+	access is particularly large or is shared with many people, it may
+	take up to 24 hours to be able to view or download the file. If you
+	still can't access a file after 24 hours, contact your domain
+	administrator.
+
+You may still be able to access the file from the browser:
+
+	https://drive.google.com/uc?/export=download&id=1Wn8dfHJxsKgscvPS5jRk16ko9UlyEYRl
+
+but Gdown can't. Please check connections and permissions.
+[2024-02-12 21:03:29,746: INFO: utils: Note: NumExpr detected 20 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-12 21:03:29,746: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-12 21:03:29,984: INFO: main: ###### stage Model Prepare started ######]
+[2024-02-12 21:03:30,000: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-12 21:03:30,000: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 21:03:30,000: INFO: common: created directory at: artifacts]
+[2024-02-12 21:03:30,000: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-02-12 21:03:30,000: INFO: prepare_base_model: model creating]
+[2024-02-12 21:03:31,170: INFO: prepare_base_model: model saved]
+[2024-02-12 21:03:31,185: INFO: main: ###### stage Model Prepare finished ######]
+[2024-02-12 21:03:31,185: INFO: main: ###### stage Model Training started ######]
+[2024-02-12 21:03:31,185: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-12 21:03:31,185: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 21:03:31,185: INFO: common: created directory at: artifacts]
+[2024-02-12 21:03:31,201: INFO: common: created directory at: artifacts/model_training]
+[2024-02-12 21:03:33,137: INFO: training: training on cuda]
+[2024-02-12 21:04:02,703: INFO: training: Epoch 1, Loss: 0.6875445659344013, Accuracy: 0.5744416873449132]
+[2024-02-12 21:04:25,932: INFO: training: Epoch 2, Loss: 0.7220724030182912, Accuracy: 0.5136476426799007]
+[2024-02-12 21:04:25,932: INFO: training: model evaluation]
+[2024-02-12 21:04:29,052: INFO: training: Accuracy: 0.6188118811881188
+Precision: 0.6930263157894736
+Recall: 0.6452331452331452
+F1 Score: 0.6024333512256218]
+[2024-02-12 21:04:30,010: INFO: training: model saved for epoch 1]
+[2024-02-12 21:04:53,408: INFO: training: Epoch 3, Loss: 0.6599684495192307, Accuracy: 0.6153846153846154]
+[2024-02-12 21:05:16,674: INFO: training: Epoch 4, Loss: 0.6380048543214798, Accuracy: 0.5918114143920595]
+[2024-02-12 21:05:16,674: INFO: training: model evaluation]
+[2024-02-12 21:05:19,841: INFO: training: Accuracy: 0.7821782178217822
+Precision: 0.8341142205900975
+Recall: 0.7612117612117613
+F1 Score: 0.7626068376068376]
+[2024-02-12 21:05:20,640: INFO: training: model saved for epoch 3]
+[2024-02-12 21:05:44,075: INFO: training: Epoch 5, Loss: 0.49288281683738416, Accuracy: 0.7593052109181141]
+[2024-02-12 21:06:08,031: INFO: training: Epoch 6, Loss: 0.36484255412450206, Accuracy: 0.825062034739454]
+[2024-02-12 21:06:08,031: INFO: training: model evaluation]
+[2024-02-12 21:06:11,241: INFO: training: Accuracy: 0.5
+Precision: 0.7369791666666666
+Recall: 0.545045045045045
+F1 Score: 0.40419939841719477]
+[2024-02-12 21:06:11,906: INFO: training: model saved for epoch 5]
+[2024-02-12 21:06:35,400: INFO: training: Epoch 7, Loss: 0.6103275601680462, Accuracy: 0.6327543424317618]
+[2024-02-12 21:06:58,716: INFO: training: Epoch 8, Loss: 0.15952542732254818, Accuracy: 0.9441687344913151]
+[2024-02-12 21:06:58,717: INFO: training: model evaluation]
+[2024-02-12 21:07:01,867: INFO: training: Accuracy: 0.9702970297029703
+Precision: 0.97000297000297
+Recall: 0.97000297000297
+F1 Score: 0.97000297000297]
+[2024-02-12 21:07:02,431: INFO: training: model saved for epoch 7]
+[2024-02-12 21:07:25,931: INFO: training: Epoch 9, Loss: 0.0813666634225788, Accuracy: 0.9826302729528535]
+[2024-02-12 21:07:49,082: INFO: training: Epoch 10, Loss: 0.1273872416215734, Accuracy: 0.9640198511166254]
+[2024-02-12 21:07:49,082: INFO: training: model evaluation]
+[2024-02-12 21:07:52,175: INFO: training: Accuracy: 0.995049504950495
+Precision: 0.9945652173913043
+Recall: 0.9954954954954955
+F1 Score: 0.9950053161239274]
+[2024-02-12 21:07:52,628: INFO: training: model saved for epoch 9]
+[2024-02-12 21:07:52,628: INFO: training: training finished!]
+[2024-02-12 21:07:52,628: INFO: main: ###### stage Model Training finished ######]
+[2024-02-12 21:07:52,628: INFO: main: ###### stage Model Testing started ######]
+[2024-02-12 21:07:52,628: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-12 21:07:52,628: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 21:07:52,628: INFO: common: created directory at: artifacts]
+[2024-02-12 21:07:56,884: INFO: testing: Accuracy: 0.865
+Precision: 0.8853869707528244
+Recall: 0.865
+F1 Score: 0.8631906969673937]
+[2024-02-12 21:07:56,884: INFO: testing:               precision    recall  f1-score   support
+
+      Normal       0.97      0.75      0.85       100
+       Tumor       0.80      0.98      0.88       100
+
+    accuracy                           0.86       200
+   macro avg       0.89      0.86      0.86       200
+weighted avg       0.89      0.86      0.86       200
+]
+[2024-02-12 21:07:56,894: INFO: testing: conf_matrix:
+ [[75 25]
+ [ 2 98]]]
+[2024-02-12 21:08:03,868: INFO: dir_util: creating C:\Users\15600\Desktop\PY\kidney-disease-classification-project\mlruns\0\968c34ad681942d3bb0abc71d984c7ae\artifacts\model\data]
+[2024-02-12 21:08:04,576: INFO: main: ###### stage Model Testing finished ######]
+[2024-02-12 21:12:44,877: INFO: utils: Note: NumExpr detected 20 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-12 21:12:44,877: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-12 21:12:45,121: INFO: main: ###### stage Model Testing started ######]
+[2024-02-12 21:12:45,121: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-12 21:12:45,121: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 21:12:45,121: INFO: common: created directory at: artifacts]
+[2024-02-12 21:12:55,620: INFO: testing: Accuracy: 0.865
+Precision: 0.8853869707528244
+Recall: 0.865
+F1 Score: 0.8631906969673937]
+[2024-02-12 21:12:55,625: INFO: testing:               precision    recall  f1-score   support
+
+      Normal       0.97      0.75      0.85       100
+       Tumor       0.80      0.98      0.88       100
+
+    accuracy                           0.86       200
+   macro avg       0.89      0.86      0.86       200
+weighted avg       0.89      0.86      0.86       200
+]
+[2024-02-12 21:12:55,626: INFO: testing: conf_matrix:
+ [[75 25]
+ [ 2 98]]]
+[2024-02-12 21:12:55,626: INFO: stage_04_testing: start logging mlflow]
+[2024-02-12 21:13:02,196: INFO: dir_util: creating C:\Users\15600\Desktop\PY\kidney-disease-classification-project\mlruns\0\3ea9c95309414cbcba6ec13a2346860d\artifacts\model\data]
+[2024-02-12 21:13:02,827: INFO: main: ###### stage Model Testing finished ######]
+[2024-02-12 21:19:46,080: INFO: utils: Note: NumExpr detected 20 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.]
+[2024-02-12 21:19:46,080: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-02-12 21:19:46,314: INFO: main: ###### stage Model Testing started ######]
+[2024-02-12 21:19:46,314: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-12 21:19:46,314: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-12 21:19:46,314: INFO: common: created directory at: artifacts]
+[2024-02-12 21:19:56,508: INFO: testing: Accuracy: 0.865
+Precision: 0.8853869707528244
+Recall: 0.865
+F1 Score: 0.8631906969673937]
+[2024-02-12 21:19:56,511: INFO: testing:               precision    recall  f1-score   support
+
+      Normal       0.97      0.75      0.85       100
+       Tumor       0.80      0.98      0.88       100
+
+    accuracy                           0.86       200
+   macro avg       0.89      0.86      0.86       200
+weighted avg       0.89      0.86      0.86       200
+]
+[2024-02-12 21:19:56,512: INFO: testing: conf_matrix:
+ [[75 25]
+ [ 2 98]]]
+[2024-02-12 21:19:56,513: INFO: stage_04_testing: start logging mlflow]
+[2024-02-12 21:21:49,056: INFO: main: ###### stage Model Testing finished ######]

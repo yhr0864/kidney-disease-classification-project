@@ -2,9 +2,9 @@ artifacts_root: artifacts
 
 data_ingestion:
   root_dir: artifacts/data_ingestion
-  src_URL: https://drive.google.com/file/d/1zUm_UQU1XAt1BV3oyMtidTUsQITL3qDN/view?usp=drive_link
+  src_URL: https://drive.google.com/file/d/1Wn8dfHJxsKgscvPS5jRk16ko9UlyEYRl/view?usp=sharing
   local_data_file: artifacts/data_ingestion/data.zip
-  unzip_dir: artifacts/data_ingestion
+  unzip_dir: artifacts/data_ingestion/kidneyCTscan
 
 prepare_base_model:
   root_dir: artifacts/prepare_base_model
@@ -13,4 +13,8 @@ prepare_base_model:
 model_training:
   root_dir: artifacts/model_training
   trained_model_path: artifacts/model_training/model.pt
+
+model_testing:
+  mlflow_uri: https://dagshub.com/yhr0864/kidney-disease-classification-project.mlflow
+
   

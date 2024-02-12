@@ -1,6 +1,6 @@
+from src.KDClassifier import logger
 from src.KDClassifier.config.configuration import ConfigurationManager
 from src.KDClassifier.components.training import Training
-from src.KDClassifier import logger
 
 
 STAGE_NAME = "Model Training"
@@ -15,7 +15,6 @@ class ModelTrainingPipeline:
         training = Training(training_config)
         training.get_training_model()
         training.train_valid_generator()
-        logger.info("start training")
         training.train()
 
 

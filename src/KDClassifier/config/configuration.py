@@ -3,7 +3,8 @@ from src.KDClassifier.constants import *
 from src.KDClassifier.utils.common import read_yaml, create_directories
 from src.KDClassifier.entity.config_entity import (DataIngestionConfig, 
                                                    PrepareBaseModelConfig,
-                                                   TrainingModelConfig)
+                                                   TrainingModelConfig,
+                                                   TestingConfig)
 
 
 class ConfigurationManager:
@@ -45,7 +46,7 @@ class ConfigurationManager:
     def get_training_config(self) -> TrainingModelConfig:
         prepare_base_model = self.config.prepare_base_model
         model_training = self.config.model_training
-        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "kidneyCTscan")
+        training_data = os.path.join(self.config.data_ingestion.unzip_dir, "train")
         create_directories([model_training.root_dir])
 
         training_config = TrainingModelConfig(
@@ -59,3 +60,14 @@ class ConfigurationManager:
 
         )
         return training_config
+    
+    def get_testing_config(self) -> TestingConfig:
+        testing_data = os.path.join(self.config.data_ingestion.unzip_dir, "test")
+        test_config = TestingConfig(
+            model_path=Path(self.config.model_training.trained_model_path),
+            testing_data=Path(testing_data),
+            all_params=self.params,
+            mlflow_uri=str(self.config.model_testing.mlflow_uri)
+
+        )
+        return test_config

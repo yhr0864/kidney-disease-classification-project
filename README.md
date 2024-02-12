@@ -37,3 +37,26 @@ conda activate myenv
 ```bash
 pip install -r requirements.txt
 ```
+
+```bash
+##### cmd
+mlflow ui
+```
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI=https://dagshub.com/yhr0864/kidney-disease-classification-project.mlflow \
+MLFLOW_TRACKING_USERNAME=yhr0864 \
+MLFLOW_TRACKING_PASSWORD=d9d7c85432b94cdcba7ac783932b5090561e756d \
+python script.py
+
+Run this to export as env variables:
+```bash
+
+export MLFLOW_TRACKING_URI=https://dagshub.com/yhr0864/kidney-disease-classification-project.mlflow
+
+export MLFLOW_TRACKING_USERNAME=yhr0864
+
+export MLFLOW_TRACKING_PASSWORD=d9d7c85432b94cdcba7ac783932b5090561e756d
+```

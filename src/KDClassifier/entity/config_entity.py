@@ -26,3 +26,11 @@ class TrainingModelConfig:
     params_batch_size: int
     params_epochs: int
     params_learning_rate: float
+
+
+@dataclass(frozen=True)
+class TestingConfig:
+    model_path: Path
+    testing_data: Path
+    all_params: dict
+    mlflow_uri: str

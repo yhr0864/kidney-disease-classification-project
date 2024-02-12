@@ -1,25 +1,28 @@
 from src.KDClassifier import logger
 from src.KDClassifier.config.configuration import ConfigurationManager
-from src.KDClassifier.components.prepare_base_model import PrepareBaseModel 
+from src.KDClassifier.components.testing import Testing
 
 
-STAGE_NAME = "Model Prepare"
+STAGE_NAME = "Model Testing"
 
-class ModelPreparePipeline:
+class ModelTestingPipeline:
     def __init__(self) -> None:
         pass
 
     def main(self):
         config = ConfigurationManager()
-        PrepareBaseModelConfig = config.get_base_model_config()
-        prepare_base_model = PrepareBaseModel(config=PrepareBaseModelConfig)
-        prepare_base_model.get_base_model()
+        test_config = config.get_testing_config()
+        testing = Testing(test_config)
+        testing.get_testing_model()
+        testing.test_generator()
+        testing.get_testing()
+        testing.log_into_mlflow()
 
 
 if __name__ == "__main__":
     try:
         logger.info(f"###### stage {STAGE_NAME} started ######")
-        obj = ModelPreparePipeline()
+        obj = ModelTestingPipeline()
         obj.main()
         logger.info(f"###### stage {STAGE_NAME} finished ######")
     except Exception as e:
