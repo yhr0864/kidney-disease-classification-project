@@ -48,7 +48,7 @@ mlflow ui
 
 MLFLOW_TRACKING_URI=https://dagshub.com/yhr0864/kidney-disease-classification-project.mlflow \
 MLFLOW_TRACKING_USERNAME=yhr0864 \
-MLFLOW_TRACKING_PASSWORD=d9d7c85432b94cdcba7ac783932b5090561e756d \
+MLFLOW_TRACKING_PASSWORD=XXXXXXXXXXXXXXXXXXXXXXXXXXXXX \
 python script.py
 
 Run this to export as env variables:
