@@ -1,0 +1,59 @@
+stages:
+  data_ingestion:
+    cmd: python src/KDClassifier/pipeline/stage_01_data_ingestion.py
+    deps: # dependency if you want to run cmd above
+      - src/KDClassifier/pipeline/stage_01_data_ingestion.py
+      - config/config.yaml
+    outs: # output
+      - artifacts/data_ingestion/kidneyCTscan
+
+  model_prepare:
+    cmd: python src/KDClassifier/pipeline/stage_02_model_prepare.py
+    deps: 
+      - src/KDClassifier/pipeline/stage_02_model_prepare.py
+      - config/config.yaml
+    params:
+      - NUM_CLASSES
+    outs:
+      - artifacts/prepare_base_model
+
+  training:
+    cmd: python src/KDClassifier/pipeline/stage_03_training.py
+    deps: 
+      - src/KDClassifier/pipeline/stage_03_training.py
+      - config/config.yaml
+      - artifacts/data_ingestion/kidneyCTscan
+      - artifacts/prepare_base_model
+    params:
+      - BATCH_SIZE
+      - EPOCHS
+      - LEARNING_RATE
+    outs:
+      - artifacts/model_training/model.pt
+  
+  testing:
+    cmd: python src/KDClassifier/pipeline/stage_04_testing.py
+    deps: 
+      - src/KDClassifier/pipeline/stage_04_testing.py
+      - config/config.yaml
+      - artifacts/data_ingestion/kidneyCTscan
+      - artifacts/model_training/model.pt
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

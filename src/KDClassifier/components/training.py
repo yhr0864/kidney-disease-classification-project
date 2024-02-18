@@ -5,9 +5,9 @@ import torch.optim as optim
 from torch.utils.data import DataLoader
 from transformers import ViTFeatureExtractor
 
-from src.KDClassifier import logger
-from src.KDClassifier.utils.dataloader import KidneyDataset
-from src.KDClassifier.entity.config_entity import TrainingModelConfig
+from KDClassifier import logger
+from KDClassifier.utils.dataloader import KidneyDataset
+from KDClassifier.entity.config_entity import TrainingModelConfig
 from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 
 

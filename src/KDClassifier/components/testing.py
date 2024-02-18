@@ -7,9 +7,9 @@ from transformers import ViTFeatureExtractor
 from sklearn.metrics import (confusion_matrix, classification_report, 
                              accuracy_score, precision_recall_fscore_support)
 
-from src.KDClassifier import logger
-from src.KDClassifier.utils.dataloader import KidneyDataset
-from src.KDClassifier.entity.config_entity import TestingConfig
+from KDClassifier import logger
+from KDClassifier.utils.dataloader import KidneyDataset
+from KDClassifier.entity.config_entity import TestingConfig
 
 
 class Testing:

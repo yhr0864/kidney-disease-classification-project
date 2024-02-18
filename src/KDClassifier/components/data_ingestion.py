@@ -1,9 +1,9 @@
 import os
 import zipfile
 import gdown
-from src.KDClassifier import logger
-from src.KDClassifier.utils.common import get_size
-from src.KDClassifier.entity.config_entity import DataIngestionConfig
+from KDClassifier import logger
+from KDClassifier.utils.common import get_size
+from KDClassifier.entity.config_entity import DataIngestionConfig
 
 
 class DataIngestion:

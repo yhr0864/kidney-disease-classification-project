@@ -1,6 +1,6 @@
-from src.KDClassifier import logger
-from src.KDClassifier.config.configuration import ConfigurationManager
-from src.KDClassifier.components.prepare_base_model import PrepareBaseModel 
+from KDClassifier import logger
+from KDClassifier.config.configuration import ConfigurationManager
+from KDClassifier.components.prepare_base_model import PrepareBaseModel 
 
 
 STAGE_NAME = "Model Prepare"

@@ -1,6 +1,6 @@
-from src.KDClassifier import logger
-from src.KDClassifier.config.configuration import ConfigurationManager
-from src.KDClassifier.components.testing import Testing
+from KDClassifier import logger
+from KDClassifier.config.configuration import ConfigurationManager
+from KDClassifier.components.testing import Testing
 
 
 STAGE_NAME = "Model Testing"
@@ -16,7 +16,7 @@ class ModelTestingPipeline:
         testing.get_testing_model()
         testing.test_generator()
         testing.get_testing()
-        testing.log_into_mlflow()
+        # testing.log_into_mlflow()
 
 
 if __name__ == "__main__":

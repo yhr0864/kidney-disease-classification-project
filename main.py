@@ -1,9 +1,9 @@
 import os
-from src.KDClassifier import logger
-from src.KDClassifier.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
-from src.KDClassifier.pipeline.stage_02_model_prepare import ModelPreparePipeline
-from src.KDClassifier.pipeline.stage_03_training import ModelTrainingPipeline
-from src.KDClassifier.pipeline.stage_04_testing import ModelTestingPipeline
+from KDClassifier import logger
+from KDClassifier.pipeline.stage_01_data_ingestion import DataIngestionTrainingPipeline
+from KDClassifier.pipeline.stage_02_model_prepare import ModelPreparePipeline
+from KDClassifier.pipeline.stage_03_training import ModelTrainingPipeline
+from KDClassifier.pipeline.stage_04_testing import ModelTestingPipeline
 
 
 STAGE_NAME = "Data Ingestion"

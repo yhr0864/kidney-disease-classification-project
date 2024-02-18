@@ -1,0 +1,90 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/KDClassifier/pipeline/stage_01_data_ingestion.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 1748f6d9140737dff5a2a7daaf3a0322
+      size: 639
+    - path: src/KDClassifier/pipeline/stage_01_data_ingestion.py
+      hash: md5
+      md5: 47897de14b11c14041eb86be2acfb846
+      size: 890
+    outs:
+    - path: artifacts/data_ingestion/kidneyCTscan
+      hash: md5
+      md5: cf966d4af3417fcb82775def98852699.dir
+      size: 172703692
+      nfiles: 1208
+  model_prepare:
+    cmd: python src/KDClassifier/pipeline/stage_02_model_prepare.py
+    deps:
+    - path: config/config.yaml
+      hash: md5
+      md5: 1748f6d9140737dff5a2a7daaf3a0322
+      size: 639
+    - path: src/KDClassifier/pipeline/stage_02_model_prepare.py
+      hash: md5
+      md5: 3ec3ed64c481299e8c17370295af017b
+      size: 846
+    params:
+      params.yaml:
+        NUM_CLASSES: 2
+    outs:
+    - path: artifacts/prepare_base_model
+      hash: md5
+      md5: 54103ffc524e212c7307dc14fa903b72.dir
+      size: 343316294
+      nfiles: 1
+  training:
+    cmd: python src/KDClassifier/pipeline/stage_03_training.py
+    deps:
+    - path: artifacts/data_ingestion/kidneyCTscan
+      hash: md5
+      md5: cf966d4af3417fcb82775def98852699.dir
+      size: 172703692
+      nfiles: 1208
+    - path: artifacts/prepare_base_model
+      hash: md5
+      md5: 54103ffc524e212c7307dc14fa903b72.dir
+      size: 343316294
+      nfiles: 1
+    - path: config/config.yaml
+      hash: md5
+      md5: 1748f6d9140737dff5a2a7daaf3a0322
+      size: 639
+    - path: src/KDClassifier/pipeline/stage_03_training.py
+      hash: md5
+      md5: 5b778bb14ae41b8303b16031e732e8ac
+      size: 849
+    params:
+      params.yaml:
+        BATCH_SIZE: 32
+        EPOCHS: 3
+        LEARNING_RATE: 0.001
+    outs:
+    - path: artifacts/model_training/model.pt
+      hash: md5
+      md5: c5c89d69616eda072958bd3b56a1c8b8
+      size: 343303754
+  testing:
+    cmd: python src/KDClassifier/pipeline/stage_04_testing.py
+    deps:
+    - path: artifacts/data_ingestion/kidneyCTscan
+      hash: md5
+      md5: cf966d4af3417fcb82775def98852699.dir
+      size: 172703692
+      nfiles: 1208
+    - path: artifacts/model_training/model.pt
+      hash: md5
+      md5: c5c89d69616eda072958bd3b56a1c8b8
+      size: 343303754
+    - path: config/config.yaml
+      hash: md5
+      md5: 1748f6d9140737dff5a2a7daaf3a0322
+      size: 639
+    - path: src/KDClassifier/pipeline/stage_04_testing.py
+      hash: md5
+      md5: c8f13a381313c6e939eeab527f33cf1f
+      size: 867

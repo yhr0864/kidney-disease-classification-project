@@ -1,7 +1,7 @@
 import os
-from src.KDClassifier.constants import *
-from src.KDClassifier.utils.common import read_yaml, create_directories
-from src.KDClassifier.entity.config_entity import (DataIngestionConfig, 
+from KDClassifier.constants import *
+from KDClassifier.utils.common import read_yaml, create_directories
+from KDClassifier.entity.config_entity import (DataIngestionConfig, 
                                                    PrepareBaseModelConfig,
                                                    TrainingModelConfig,
                                                    TestingConfig)

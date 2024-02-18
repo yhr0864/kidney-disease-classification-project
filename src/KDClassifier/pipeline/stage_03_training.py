@@ -1,6 +1,6 @@
-from src.KDClassifier import logger
-from src.KDClassifier.config.configuration import ConfigurationManager
-from src.KDClassifier.components.training import Training
+from KDClassifier import logger
+from KDClassifier.config.configuration import ConfigurationManager
+from KDClassifier.components.training import Training
 
 
 STAGE_NAME = "Model Training"

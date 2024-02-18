@@ -1180,3 +1180,102 @@ weighted avg       0.89      0.86      0.86       200
  [ 2 98]]]
 [2024-02-12 21:19:56,513: INFO: stage_04_testing: start logging mlflow]
 [2024-02-12 21:21:49,056: INFO: main: ###### stage Model Testing finished ######]
+[2024-02-18 15:49:38,961: INFO: stage_01_data_ingestion: ###### stage Data Ingestion started ######]
+[2024-02-18 15:49:38,962: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-18 15:49:38,964: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-18 15:49:38,964: INFO: common: created directory at: artifacts]
+[2024-02-18 15:49:38,965: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-18 15:49:38,965: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1Wn8dfHJxsKgscvPS5jRk16ko9UlyEYRl/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-18 15:49:54,250: INFO: data_ingestion: Download finished!]
+[2024-02-18 15:49:54,250: INFO: data_ingestion: extracting data]
+[2024-02-18 15:49:55,603: INFO: data_ingestion: extract finished!]
+[2024-02-18 15:49:55,603: INFO: stage_01_data_ingestion: ###### stage Data Ingestion finished ######]
+[2024-02-18 15:50:04,671: INFO: stage_02_model_prepare: ###### stage Model Prepare started ######]
+[2024-02-18 15:50:04,683: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-18 15:50:04,683: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-18 15:50:04,683: INFO: common: created directory at: artifacts]
+[2024-02-18 15:50:04,683: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-02-18 15:50:04,683: INFO: prepare_base_model: model creating]
+[2024-02-18 15:50:05,782: INFO: prepare_base_model: model saved]
+[2024-02-18 15:50:05,782: INFO: stage_02_model_prepare: ###### stage Model Prepare finished ######]
+[2024-02-18 15:50:58,812: INFO: stage_03_training: ###### stage Model Training started ######]
+[2024-02-18 15:50:58,814: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-18 15:50:58,814: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-18 15:50:58,815: INFO: common: created directory at: artifacts]
+[2024-02-18 15:50:58,815: INFO: common: created directory at: artifacts/model_training]
+[2024-02-18 15:50:59,341: ERROR: stage_03_training: [WinError 3] 系统找不到指定的路径。: 'artifacts\\data_ingestion\\kidneyCTscan\\train\\Normal']
+Traceback (most recent call last):
+  File "C:\Users\15600\Desktop\PY\kidney-disease-classification-project\src\KDClassifier\pipeline\stage_03_training.py", line 25, in <module>
+    obj.main()
+  File "C:\Users\15600\Desktop\PY\kidney-disease-classification-project\src\KDClassifier\pipeline\stage_03_training.py", line 17, in main
+    training.train_valid_generator()
+  File "c:\users\15600\desktop\py\kidney-disease-classification-project\src\KDClassifier\components\training.py", line 24, in train_valid_generator
+    dataset = KidneyDataset(self.config.training_data, feature_extractor)
+  File "c:\users\15600\desktop\py\kidney-disease-classification-project\src\KDClassifier\utils\dataloader.py", line 14, in __init__
+    for img in os.listdir(path):
+FileNotFoundError: [WinError 3] 系统找不到指定的路径。: 'artifacts\\data_ingestion\\kidneyCTscan\\train\\Normal'
+[2024-02-18 16:01:45,207: INFO: stage_01_data_ingestion: ###### stage Data Ingestion started ######]
+[2024-02-18 16:01:45,207: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-18 16:01:45,207: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-18 16:01:45,207: INFO: common: created directory at: artifacts]
+[2024-02-18 16:01:45,207: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-02-18 16:01:45,207: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1S0-inA_KSC4VEJx9IFJlAAXuveQCdQPM/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-02-18 16:02:00,486: INFO: data_ingestion: Download finished!]
+[2024-02-18 16:02:00,486: INFO: data_ingestion: extracting data]
+[2024-02-18 16:02:01,780: INFO: data_ingestion: extract finished!]
+[2024-02-18 16:02:01,780: INFO: stage_01_data_ingestion: ###### stage Data Ingestion finished ######]
+[2024-02-18 16:02:08,334: INFO: stage_02_model_prepare: ###### stage Model Prepare started ######]
+[2024-02-18 16:02:08,334: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-18 16:02:08,334: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-18 16:02:08,334: INFO: common: created directory at: artifacts]
+[2024-02-18 16:02:08,334: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-02-18 16:02:08,334: INFO: prepare_base_model: model creating]
+[2024-02-18 16:02:09,414: INFO: prepare_base_model: model saved]
+[2024-02-18 16:02:09,414: INFO: stage_02_model_prepare: ###### stage Model Prepare finished ######]
+[2024-02-18 16:02:13,388: INFO: stage_03_training: ###### stage Model Training started ######]
+[2024-02-18 16:02:13,390: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-18 16:02:13,391: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-18 16:02:13,391: INFO: common: created directory at: artifacts]
+[2024-02-18 16:02:13,392: INFO: common: created directory at: artifacts/model_training]
+[2024-02-18 16:02:13,941: INFO: training: training on cpu]
+[2024-02-18 16:07:57,032: INFO: training: Epoch 1, Loss: 0.7109769139780892, Accuracy: 0.511166253101737]
+[2024-02-18 16:07:57,032: INFO: training: training finished!]
+[2024-02-18 16:07:57,032: INFO: stage_03_training: ###### stage Model Training finished ######]
+[2024-02-18 16:10:13,933: INFO: stage_03_training: ###### stage Model Training started ######]
+[2024-02-18 16:10:13,949: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-18 16:10:13,949: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-18 16:10:13,949: INFO: common: created directory at: artifacts]
+[2024-02-18 16:10:13,949: INFO: common: created directory at: artifacts/model_training]
+[2024-02-18 16:10:15,513: INFO: training: training on cpu]
+[2024-02-18 16:17:05,525: INFO: training: Epoch 1, Loss: 0.7118405722654783, Accuracy: 0.533498759305211]
+[2024-02-18 16:21:09,866: INFO: training: Epoch 2, Loss: 0.6554989665746689, Accuracy: 0.6203473945409429]
+[2024-02-18 16:21:09,866: INFO: training: model evaluation]
+[2024-02-18 16:21:32,123: INFO: training: Accuracy: 0.7722772277227723
+Precision: 0.7997900262467191
+Recall: 0.7809149040826364
+F1 Score: 0.77002277002277]
+[2024-02-18 16:21:32,330: INFO: training: model saved for epoch 1]
+[2024-02-18 16:26:09,275: INFO: training: Epoch 3, Loss: 0.5481867767297305, Accuracy: 0.7531017369727047]
+[2024-02-18 16:26:09,275: INFO: training: training finished!]
+[2024-02-18 16:26:09,275: INFO: stage_03_training: ###### stage Model Training finished ######]
+[2024-02-18 16:26:38,532: INFO: stage_04_testing: ###### stage Model Testing started ######]
+[2024-02-18 16:26:38,532: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-02-18 16:26:38,532: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-02-18 16:26:38,532: INFO: common: created directory at: artifacts]
+[2024-02-18 16:27:08,164: INFO: testing: Accuracy: 0.85
+Precision: 0.8713921901528013
+Recall: 0.85
+F1 Score: 0.8478084415584416]
+[2024-02-18 16:27:08,164: INFO: testing:               precision    recall  f1-score   support
+
+      Normal       0.78      0.97      0.87       100
+       Tumor       0.96      0.73      0.83       100
+
+    accuracy                           0.85       200
+   macro avg       0.87      0.85      0.85       200
+weighted avg       0.87      0.85      0.85       200
+]
+[2024-02-18 16:27:08,176: INFO: testing: conf_matrix:
+ [[97  3]
+ [27 73]]]
+[2024-02-18 16:27:08,177: INFO: stage_04_testing: ###### stage Model Testing finished ######]

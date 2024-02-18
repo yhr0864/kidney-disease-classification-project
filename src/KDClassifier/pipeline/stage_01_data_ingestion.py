@@ -1,6 +1,6 @@
-from src.KDClassifier import logger
-from src.KDClassifier.config.configuration import ConfigurationManager
-from src.KDClassifier.components.data_ingestion import DataIngestion
+from KDClassifier import logger
+from KDClassifier.config.configuration import ConfigurationManager
+from KDClassifier.components.data_ingestion import DataIngestion
 
 
 STAGE_NAME = "Data Ingestion"

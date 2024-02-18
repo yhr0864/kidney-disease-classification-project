@@ -2,8 +2,8 @@ import torch
 import torch.nn as nn
 from transformers import ViTForImageClassification
 
-from src.KDClassifier import logger
-from src.KDClassifier.entity.config_entity import PrepareBaseModelConfig
+from KDClassifier import logger
+from KDClassifier.entity.config_entity import PrepareBaseModelConfig
 
 
 class ViTClassifier(nn.Module):

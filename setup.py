@@ -1,6 +1,8 @@
+#create local packages: KDClassifier, so that you can directly import it from anywhere
+
 import setuptools
 
-#create README interface on github
+
 with open("README.md", "r", encoding="utf-8") as f:
     long_description = f.read()
 
@@ -23,6 +25,6 @@ setuptools.setup(
     project_url={
         "Bug Tracker": f"http://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
-    package_dir={"": "scr"},
+    package_dir={"": "src"},
     packages=setuptools.find_packages(where="src")
 )
