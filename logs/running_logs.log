@@ -1279,3 +1279,278 @@ weighted avg       0.87      0.85      0.85       200
  [[97  3]
  [27 73]]]
 [2024-02-18 16:27:08,177: INFO: stage_04_testing: ###### stage Model Testing finished ######]
+[2024-02-19 10:09:07,559: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.2.104:8080]
+[2024-02-19 10:09:07,562: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-19 10:09:27,447: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:09:27] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:09:55,820: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\15600\Desktop\PY\kidney-disease-classification-project\app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\15600\desktop\py\kidney-disease-classification-project\src\KDClassifier\pipeline\prediction.py", line 18, in predict
+    loader = transforms.Compose([transforms.Scale(224), transforms.ToTensor()])
+AttributeError: module 'torchvision.transforms' has no attribute 'Scale'
+[2024-02-19 10:09:55,820: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:09:55] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-02-19 10:11:21,460: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:11:21] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:12:27,519: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.2.104:8000]
+[2024-02-19 10:12:27,520: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-19 10:12:40,734: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:12:40] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:12:46,193: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\15600\Desktop\PY\kidney-disease-classification-project\app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\15600\desktop\py\kidney-disease-classification-project\src\KDClassifier\pipeline\prediction.py", line 18, in predict
+    loader = transforms.Compose([transforms.Scale(224), transforms.ToTensor()])
+AttributeError: module 'torchvision.transforms' has no attribute 'Scale'
+[2024-02-19 10:12:46,193: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:12:46] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-02-19 10:15:01,217: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:15:01] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:22:27,242: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.2.104:8000]
+[2024-02-19 10:22:27,242: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-19 10:22:37,734: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:22:37] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:22:42,592: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\15600\Desktop\PY\kidney-disease-classification-project\app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\15600\desktop\py\kidney-disease-classification-project\src\KDClassifier\pipeline\prediction.py", line 20, in predict
+    output = model(loader(image))
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "c:\users\15600\desktop\py\kidney-disease-classification-project\src\KDClassifier\components\prepare_base_model.py", line 16, in forward
+    x = self.vit(pixel_values=x).logits
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\transformers\models\vit\modeling_vit.py", line 794, in forward
+    outputs = self.vit(
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\transformers\models\vit\modeling_vit.py", line 573, in forward
+    embedding_output = self.embeddings(
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\transformers\models\vit\modeling_vit.py", line 121, in forward
+    batch_size, num_channels, height, width = pixel_values.shape
+ValueError: not enough values to unpack (expected 4, got 3)
+[2024-02-19 10:22:42,592: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:22:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-02-19 10:22:59,810: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:22:59] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:44:16,487: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.2.104:8000]
+[2024-02-19 10:44:16,487: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-19 10:44:28,471: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:44:28] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:44:32,847: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\15600\Desktop\PY\kidney-disease-classification-project\app.py", line 40, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\15600\desktop\py\kidney-disease-classification-project\src\KDClassifier\pipeline\prediction.py", line 23, in predict
+    output = model(img)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "c:\users\15600\desktop\py\kidney-disease-classification-project\src\KDClassifier\components\prepare_base_model.py", line 16, in forward
+    x = self.vit(pixel_values=x).logits
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\transformers\models\vit\modeling_vit.py", line 794, in forward
+    outputs = self.vit(
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\transformers\models\vit\modeling_vit.py", line 573, in forward
+    embedding_output = self.embeddings(
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\transformers\models\vit\modeling_vit.py", line 122, in forward
+    embeddings = self.patch_embeddings(pixel_values, interpolate_pos_encoding=interpolate_pos_encoding)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\transformers\models\vit\modeling_vit.py", line 177, in forward
+    raise ValueError(
+ValueError: Input image size (224*277) doesn't match model (224*224).
+[2024-02-19 10:44:32,854: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:44:32] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-02-19 10:44:51,363: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:44:51] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:52:15,667: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.2.104:8000]
+[2024-02-19 10:52:15,667: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-19 10:52:19,695: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:52:19] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:52:24,205: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\15600\Desktop\PY\kidney-disease-classification-project\app.py", line 41, in predictRoute
+    print(image.shape)
+AttributeError: 'str' object has no attribute 'shape'
+[2024-02-19 10:52:24,210: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:52:24] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-02-19 10:52:36,091: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:52:36] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:55:05,171: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.2.104:8000]
+[2024-02-19 10:55:05,171: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-19 10:55:09,620: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:55:09] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:55:14,369: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "C:\Users\15600\Desktop\PY\kidney-disease-classification-project\app.py", line 41, in predictRoute
+    result = clApp.classifier.predict()
+  File "c:\users\15600\desktop\py\kidney-disease-classification-project\src\KDClassifier\pipeline\prediction.py", line 24, in predict
+    output = model(img)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "c:\users\15600\desktop\py\kidney-disease-classification-project\src\KDClassifier\components\prepare_base_model.py", line 16, in forward
+    x = self.vit(pixel_values=x).logits
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\transformers\models\vit\modeling_vit.py", line 794, in forward
+    outputs = self.vit(
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\transformers\models\vit\modeling_vit.py", line 573, in forward
+    embedding_output = self.embeddings(
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\transformers\models\vit\modeling_vit.py", line 122, in forward
+    embeddings = self.patch_embeddings(pixel_values, interpolate_pos_encoding=interpolate_pos_encoding)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\torch\nn\modules\module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\anaconda3\envs\kidney_env\lib\site-packages\transformers\models\vit\modeling_vit.py", line 177, in forward
+    raise ValueError(
+ValueError: Input image size (224*277) doesn't match model (224*224).
+[2024-02-19 10:55:14,369: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:55:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2024-02-19 10:55:20,306: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:55:20] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:57:15,473: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.2.104:8000]
+[2024-02-19 10:57:15,473: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-19 10:57:21,801: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:57:21] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:57:25,569: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:57:25] "POST /predict HTTP/1.1" 200 -]
+[2024-02-19 10:58:56,583: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.2.104:8000]
+[2024-02-19 10:58:56,584: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-19 10:58:59,511: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:58:59] "GET / HTTP/1.1" 200 -]
+[2024-02-19 10:59:03,819: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:59:03] "POST /predict HTTP/1.1" 200 -]
+[2024-02-19 10:59:19,886: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:59:19] "POST /predict HTTP/1.1" 200 -]
+[2024-02-19 10:59:24,988: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 10:59:24] "GET / HTTP/1.1" 200 -]
+[2024-02-19 11:01:38,955: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.2.104:8000]
+[2024-02-19 11:01:38,956: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-19 11:01:42,409: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 11:01:42] "GET / HTTP/1.1" 200 -]
+[2024-02-19 11:01:48,370: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 11:01:48] "POST /predict HTTP/1.1" 200 -]
+[2024-02-19 11:04:41,680: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.2.104:8000]
+[2024-02-19 11:04:41,680: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2024-02-19 11:04:50,062: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 11:04:50] "GET / HTTP/1.1" 200 -]
+[2024-02-19 11:04:53,206: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 11:04:53] "POST /predict HTTP/1.1" 200 -]
+[2024-02-19 11:05:01,860: INFO: _internal: 127.0.0.1 - - [19/Feb/2024 11:05:01] "GET / HTTP/1.1" 200 -]
